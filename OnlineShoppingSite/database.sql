@@ -1,0 +1,10 @@
+create database poduct;
+use poduct;
+create table userproduct(name varchar(100),email varchar(100) primary key,mobileno bigint,sqn varchar(100),anw varchar(100),password varchar(100),address varchar(200),city varchar(100),state varchar(100),country varchar(100));
+describe userproduct;
+select * from cart;
+create table product_table(id int,name varchar(100),category varchar(200),price int,active varchar(10) );
+create table cart (email varchar(100),product_id int,quantity int,price int,total int,address varchar(300),city varchar(100),state varchar(100),country varchar(100),mobile_no bigint,orderdate date,deliverydate date,paymentmethod varchar(100),tarsactionid int,status varchar(50));
+describe cart;
+delete from cart where email='abhi2@gmail.com';
+alter table cart add product_table varchar(100) after email;

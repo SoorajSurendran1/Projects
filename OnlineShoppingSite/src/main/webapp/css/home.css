@@ -1,0 +1,95 @@
+@charset "ISO-8859-1";
+.headho
+{
+	background: blue;
+	position: sticky;
+	border-radius: 8px;
+	padding: 1px;
+	
+}
+.h1
+{
+	color:white;
+	margin:0;
+}
+.nav2 ul
+{
+	display: flex;
+	justify-content: space-between;
+}
+.home,.home1
+{
+	align-items: center;
+	width: 130px;
+	height:15px;
+}
+.home:hover
+{
+	color: #B5A0FE ;
+}
+.home a
+{
+	text-decoration:none;
+	color:white;
+	font-size:14px;
+}
+.home a:hover
+{
+	color: #B5A0FE ;
+}
+center
+{
+	padding: 5px;
+}
+.home1
+{
+	display:flex;
+	align-items: center;
+	width:120px;
+	margin-right: 25px;
+}
+.home1:hover
+{
+	
+	color: #B5A0FE ;
+}
+.home1 a
+{
+	font-size: 17px;
+	color: white;
+	text-decoration:none;
+	margin-right: 10px;
+}
+.home1 a:hover
+{
+	color: #B5A0FE ;
+}
+.home input
+{
+   display: flex;
+   align-items:center;
+   width: 50%;
+}
+.foot2
+{
+	position:absolute;
+	margin-top:500px;
+	width:99%;
+	border-radius:5px;
+	background-color: blue;
+}
+.foot2 p
+{
+	text-align: center;
+}
+.home3
+{
+	display: inline-flex;
+	
+}
+.home3 input
+{
+	border-style: solid;
+	border-radius:5px;
+	outline: none;
+}

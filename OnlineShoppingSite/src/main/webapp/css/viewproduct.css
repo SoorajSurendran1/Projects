@@ -1,0 +1,51 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+
+
+h1
+{
+	text-align: center;
+	margin: 10px;
+}
+.dis
+{
+	text-align:center;
+	color: #00C621;
+}
+.dis1
+{
+	text-align:center;
+	color:red;
+}
+table 
+{
+	width:100%;
+	text-align: center;
+	border:2px solid;
+	border-collapse: collapse;
+}
+table th
+{
+	border: 1px solid;
+	background-color: #218DF3;
+	border-color:black;
+	font-weight:bold;
+	font-size:17px;
+	color: white;
+	padding: 5px;
+}
+table tr,td
+{
+	border:1px solid;
+	padding: 5px;
+	
+}
+table tr:hover 
+{
+	background: #B2B2B2 ;
+}
+td a
+{
+	text-decoration: none;
+}
+

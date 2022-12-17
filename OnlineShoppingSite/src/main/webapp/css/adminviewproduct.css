@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+
+h2
+{
+	text-align: center;
+	margin: 10px;
+}
+table 
+{
+	width:100%;
+	text-align: center;
+	border:2px solid;
+	border-collapse: collapse;
+}
+table th
+{
+	border: 1px solid;
+	background-color: #218DF3;
+	border-color:black;
+	font-weight:bold;
+	font-size:17px;
+	color: white;
+	padding: 5px;
+}
+table tr,td
+{
+	border:1px solid;
+	padding: 5px;
+	
+}
+table tr:hover 
+{
+	background: #B2B2B2 ;
+}
