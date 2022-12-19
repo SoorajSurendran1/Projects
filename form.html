@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <style>
+            *
+            {
+                font-family:Tahoma;
+            }
+            body
+            {
+                background-color: blueviolet;
+            }
+            .div1
+            {
+                margin: auto;
+                margin-top:100px;
+                background-color:white;
+                width: 280px;
+                height: 450px;
+                border-radius: 3px;
+            }
+            .head
+            {
+                background-color: rgba(0, 0, 0, 0.233);
+                padding: 2px;
+            }
+            .head h3
+            {
+                margin-left: 15px;
+                color: rgb(66, 66, 66);
+            }
+            .f1
+            {
+                margin: 20px;
+                color: blue;
+                font-size: 13px;
+                font-family:inherit;
+
+            }
+            .f1 input
+            {
+                margin-top: 5px;
+                width: 100%;
+                height: 35px;
+                outline: none;
+                border: 1px solid;
+            }
+            .f1 input:last-child
+            {
+                background-color: blueviolet;
+                color: white;
+                border: none;
+                border-radius: 2px;
+            }
+            .f1 small
+            {
+                color: red;
+                font-size:12px;
+                margin-bottom:20px;
+                
+            }
+        
+        </style>
+        <script type="text/javascript">
+            function cheacking()
+            {
+                let username=ff.username.value;
+                let email=ff.email.value;
+                let pwd=ff.pwd.value;
+                let pwdch=ff.pwdch.value;
+                let std=false;
+                if(username.length<1)
+                {
+                    document.getElementById("id1").style.borderColor="red";
+                    document.getElementById("small1").innerText="Username cannot be blank";
+                    std=false;
+                }
+                else
+                {
+                    document.getElementById("id1").style.borderColor="#00FF00";
+                    document.getElementById("small1").innerHTML="<visibility:hidden;>"
+                }
+                if(email.length<1)
+                {
+                    document.getElementById("id2").style.borderColor="red";
+                    document.getElementById("small2").innerText="Email cannot be blank";
+                    std=false;
+                }
+                else
+                {
+                    document.getElementById("id2").style.borderColor="#00FF00";
+                    document.getElementById("small2").innerHTML="<visibility:hidden;>"
+                }
+                if(pwd.length<1)
+                {
+                    document.getElementById("id3").style.borderColor="red";
+                    document.getElementById("small3").innerText="Password can notbe blank";
+                    std=false; 
+                }
+                else
+                {
+                    document.getElementById("id3").style.borderColor="#00FF00";
+                    document.getElementById("small3").innerHTML="<visibility:hidden;>"
+                }
+                if(pwd.length<1)
+                {
+                    document.getElementById("id4").style.borderColor="red";
+                    document.getElementById("small4").innerText="Password can notbe blank";
+                    std=false; 
+                }
+                else if(pwd!=pwdch)
+                {
+                    document.getElementById("id4").style.borderColor="red";
+                    document.getElementById("small4").innerText="incorrect Password";
+                }
+                else
+                {
+                    document.getElementById("id4").style.borderColor="#00FF00";
+                    document.getElementById("small4").innerHTML="<visibility:hidden;>"
+                }
+                return std;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="div1">
+            <div class="head">
+                <h3>Create Account</h3>
+            </div>
+            <form class="f1" name="ff" onsubmit="return cheacking()">
+                Username<br><input id="id1" type="text" name="username" placeholder="Username"><br><small id="small1"></small><br>
+                Email<br><input id="id2" type="email" name="email" placeholder="user@gmail.com"><br><small id="small2"></small><br>
+                Password<br><input id="id3" type="password" name="pwd" placeholder="Password"><br><small id="small3"></small><br>
+                Confirm Password<br><input id="id4" type="password" name="pwdch" placeholder="confirm"><br><small id="small4"></small><br>
+                <input type="submit" value="Submit" id="sub">
+            </form>
+        </div>
+    </body>
+</html>
